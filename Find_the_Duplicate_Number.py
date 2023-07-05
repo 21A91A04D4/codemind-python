@@ -1,8 +1,8 @@
 n=int(input())
 l=list(map(int,input().split()))
-s=[]
+c=[]
 for i in l:
     if(l.count(i) == 2):
-        s.append(i)
+        c.append(i)
         break
-print(*s)
+print(*c)
