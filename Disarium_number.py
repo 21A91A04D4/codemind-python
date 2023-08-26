@@ -1,13 +1,17 @@
-N= int(input())
-l=len(str(N))
-T=N
-Sum = 0
-while T > 0:
-    rem = T % 10
-    Sum = Sum + int(rem**l)
-    T = T // 10
-    l = l - 1
-if Sum == N:
-    print('True')
+n=int(input())
+k=n
+c=0
+s=0
+while(k > 0):
+    k=k//10
+    c+=1
+k=n
+while(k > 0):
+    r=k%10
+    s=s+pow(r,c)
+    k=k//10
+    c-=1
+if(s==n):
+    print("True")
 else:
-    print('False')
+    print("False")
